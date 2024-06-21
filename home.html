@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crud Basics</title>
+  <link rel="stylesheet" href="colors.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+  <!-- <div class="main">
+    <h1>Social Media App</h1>
+    <div class="container">
+      <div class="left">
+        <form action="" id="form">
+          <label for="">Write Your Post Here :</label><br><br>
+          <textarea name="" id="input" cols="30" rows="10"></textarea><br><br>
+          <div id="msg"></div>
+          <button type="submit">POST</button>
+        </form>
+      </div>
+      <div class="right">
+        <h3>
+          Your Post Here
+        </h3>
+        <div id="post">
+          <div>
+            <p>post 1</p>
+            <span class="options">
+              <i onClick='deletepost(this)' class="fas fa-trash-alt"></i>
+              <i onClick='editpost(this)' class="fas fa-edit"></i>
+            </span>
+          </div>
+          <div>
+            <p>post 2</p>
+            <span class="options">
+              <i onClick='deletepost(this)' class="fas fa-trash-alt"></i>
+              <i onClick='editpost(this)' class="fas fa-edit"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div class="app">
+    <h4 class="mb-3">Todo App</h4>
+    <div id="addnew" data-bs-toggle="modal" data-bs-target="#form">
+      <span>Add New Task</span>
+      <i class="fas fa-plus"></i>
+    </div>
+    <h5 class="text-center my-3">Tasks</h5>
+
+    <!-- Modal -->
+    <form class="modal fade" id="form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add New Task</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Task Title</p>
+
+            <input class="form-control" type="text" name="" id="textinput">
+            <div id="msg"></div>
+            <br>
+            <p>Due Date</p>
+            <input class="form-control" type="date" name="" id="dateinput">
+            <br>
+            <p>Description</p>
+            <textarea class="form-control" name="" id="textarea" cols="30" rows="5"></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" id="add" class="btn btn-primary">Add</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div id="tasks">
+      <div>
+        <span class="fw-bold">Task 1</span>
+        <span class="small text-secondary">2024-09-15</span>
+        <p>Am Going Home To Sleep</p>
+
+        <span class="options">
+          <i onClick='deletepost(this)' class="fas fa-trash-alt"></i>
+          <i onClick='editpost(this)' data-bs-toggle="modal" data-bs-target="#form" class="fas fa-edit"></i>
+        </span>
+      </div>
+      <div>
+        <span class="fw-bold">Task 2</span>
+        <span class="small text-secondary">2024-09-15</span>
+        <p>Am Going Home To Sleep</p>
+
+        <span class="options">
+          <i onClick='deletepost(this)' class="fas fa-trash-alt"></i>
+          <i onClick='editpost(this)' data-bs-toggle="modal" data-bs-target="#form" class="fas fa-edit"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+  <script src="functions.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

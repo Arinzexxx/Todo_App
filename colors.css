@@ -1,0 +1,107 @@
+/* body {
+  font-family: sans-serif;
+  margin: 0 50px;
+}
+
+.main {
+  background-color: rgba(24, 0, 0, 0.4);
+  padding: 20px 80px;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+}
+
+#post div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#post {
+  width: 400px;
+}
+
+.options {
+  display: flex;
+  gap: 20px;
+}
+
+i {
+  cursor: pointer;
+}
+
+#msg {
+  color: red;
+}
+ */
+body {
+  font-family: sans-serif;
+  background-color: #e5e5e5;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+.app {
+  width: 300px;
+  height: 500px;
+  border: 3px solid #abcea1;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+.app::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+#addnew {
+  background-color: rgba(171, 206, 161, 0.36);
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+}
+
+.fa-plus {
+  background-color: #abcea1;
+  padding: 4px;
+  border-radius: 3px;
+}
+
+#tasks {
+  display: grid;
+  gap: 14px;
+}
+
+#tasks div {
+  background-color: #e2eede;
+  border: 3px solid #abcea1;
+  padding: 5px;
+  border-radius: 6px;
+  display: grid;
+  gap: 4px;
+}
+
+.options {
+  justify-self: center;
+  display: flex;
+  gap:20px ;
+}
+
+.options i{
+  cursor: pointer;
+}
+
+#msg {
+  color: red;
+}
